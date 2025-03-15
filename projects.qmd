@@ -1,0 +1,11 @@
+---
+title: "Projects"
+listing: 
+  type: default
+  contents:
+    - "projects/*.qmd"
+  sort: "date desc"
+  sort-ui: [title, date]
+  filter-ui: [title, date]
+  categories: TRUE
+---

@@ -2,18 +2,25 @@ project:
   type: website
 
 website:
-  title: "stats140"
+  title: "Jessica Nguyen"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: projects.qmd
+        text: Projects
 
 format:
   html:
-    theme: cosmo
+    theme:
+      - lux
+      - brand
     css: styles.css
     toc: true
 
 editor: visual
+
+excecute:
+   freeze: auto
+
 
