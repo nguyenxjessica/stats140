@@ -1,11 +1,72 @@
 ---
-title: "stats140"
+title: "Jessica Nguyen" 
+about: template: trestles 
+image: headshot.JPG 
+links: 
+  - icon: card-text 
+    text: Resume 
+    href: "resume.pdf" 
+  - icon: github 
+    text: Github 
+    href: https://github.com/nguyenxjessica 
+  - icon: envelope 
+    text: E-mail 
+    url: "mailto:jesnguyen@ucla.edu"
 ---
 
-This is a Quarto website.
+I'm a junior at UCLA majoring in Statistics & Data Science and minoring in Digital Humanities and Accounting.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## **Education**
 
-```{r}
-1 + 1
-```
+University of California, Los Angeles \| Los Angeles, CA\
+B.S in Statistics & Data Science \| Sept 2022 - June 2026
+
+## **Experience**
+
+UCLA Housing \| Front Desk Assistant\
+November 2022 - present
+
+Statistics Club at UCLA \| Marketing Chair\
+September 2022 - present
+
+Daily Bruin \| Proofer/Data Journalist\
+September 2022 - present
+
+Innovative Design at UCLA \| VP of Finances\
+September 2023 - present
+
+## **Skill set**
+
+-   R
+
+    -   ggplot2
+
+    -   dplyr
+
+    -   Caret
+
+-   SQL
+
+-   Tableau
+
+-   MS Excel
+
+-   Git
+
+    -   Github
+
+-   C++
+
+-   Adobe
+
+    -   InDesign
+
+    -   Illustrator
+
+    -   Photoshop
+
+    -   Premiere Cut Pro
+
+\
+\
+\
