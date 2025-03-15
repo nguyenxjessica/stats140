@@ -1,11 +1,59 @@
 ---
 title: "Projects"
-listing: 
-  type: default
-  contents:
-    - "projects/*.qmd"
-  sort: "date desc"
-  sort-ui: [title, date]
-  filter-ui: [title, date]
-  categories: TRUE
 ---
+
+### Project 1 
+
+### Introduction
+
+This project aimed to predict the outcomes of NBA games during the 2023-2024 season using past game statistics. The objective was to develop a statistical model capable of estimating game results based on historical performance, team matchups, and engineered features. The primary challenge was structuring the data for predictive modeling, which involved extensive feature engineering and selection techniques.
+
+### Process
+
+-   **Data** **Preprocessing:**
+
+    -   Cleaned the dataset of 1,230 games, ensuring statistical integrity.
+    -   Reshaped data so each entry contained all relevant statistics for a single game rather than separate team-specific entries.
+    -   Standardized numerical features to maintain consistency across different scales.
+
+-   **Feature** **Engineering:**
+
+    -   Created new variables such as block percentage and assist percentage to capture team performance more effectively.
+    -   Introduced a team instability metric, measuring performance variance across games to assess consistency.
+    -   Computed weighted mean past statistics, giving greater importance to recent games, home/away status, and previous matchups.
+    -   Used relative statistical measures (e.g., raw difference, squared difference) to better contextualize team performance.
+
+-   **Feature** **Selection:**
+
+    -   Applied L1-regularized Logistic Regression to identify the most informative variables.
+    -   Further refined the feature set through Principal Component Analysis (PCA) and forward selection, ultimately reducing the model to two key variables:
+    -   A principal component combining point difference and field goal percentage.
+    -   The raw count of successful three-point shots.
+
+-   **Modeling** **and** **Evaluation:**
+
+    -   Experimented with various predictive models, including:
+        -   Logistic Regression
+        -   Linear and Radial Support Vector Machines (SVM)
+        -   K-Nearest Neighbors (KNN)
+        -   Linear and Quadratic Discriminant Analysis (LDA, QDA)
+        -   Random Forest
+    -   Tuned hyperparameters via grid search and cross-validation to optimize accuracy.
+    -   Found Linear SVM to be the best-performing model, achieving a validation accuracy of 68.7%.
+
+### Outcome
+
+-   Successfully built a predictive model with nearly 70% accuracy using only two key features.
+-   Identified home/away performance weighting as a significant factor in prediction accuracy.
+-   Determined that Random Forest performed poorly due to excessive feature reduction, which limited its effectiveness.
+
+### Limitations and Future Improvements
+
+-   The current model relies on team-level statistics; incorporating individual player data and roster changes could improve predictions.
+-   Playstyle categorization (e.g., defensive vs. offensive strategies) may enhance feature selection.
+-   Exploring alternative matchup weighting schemes (e.g., team similarity metrics) could refine performance estimates.
+-   Further expanding the dataset beyond a single season might enhance model generalizability.
+
+### Document
+
+[2023-2024 NBA Results Prediction](/projects/nba_prediction.pdf)

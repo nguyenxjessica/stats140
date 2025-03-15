@@ -20,7 +20,7 @@ format:
 
 editor: visual
 
-excecute:
+execute:
    freeze: auto
 
 
